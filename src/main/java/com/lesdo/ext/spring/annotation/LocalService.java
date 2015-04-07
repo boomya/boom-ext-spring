@@ -14,5 +14,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Component // 表明可被 Spring 扫描
 public @interface LocalService {
-    Class<?> value();
+//    Class<?> value();
 }
