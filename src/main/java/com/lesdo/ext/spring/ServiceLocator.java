@@ -2,9 +2,7 @@ package com.lesdo.ext.spring;
 
 import com.lesdo.ext.spring.annotation.LocalService;
 import com.lesdo.ext.spring.annotation.LocalServiceField;
-import org.jessma.util.BeanHelper;
 import org.springframework.context.ApplicationContext;
-import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -30,9 +28,9 @@ public class ServiceLocator {
         Map<String, Object> serviceBeanMap = applicationContext.getBeansWithAnnotation(LocalService.class);
         for (Object serviceBean : serviceBeanMap.values()) {
             /** 查找init方法并执行 **/
-            try{
+            try {
                 Method method = serviceBean.getClass().getMethod("init");
-                if(method != null){
+                if (method != null) {
                     method.setAccessible(true);
                     method.invoke(serviceBean);
                 }
@@ -45,7 +43,7 @@ public class ServiceLocator {
             }
             /** 加载bean到map中, 便于后续通过map直接获取bean **/
             Class<?>[] classes = serviceBean.getClass().getInterfaces();
-            if(classes==null || classes.length<=0){
+            if (classes == null || classes.length <= 0) {
                 continue;
             }
             String serviceName = classes[0].getSimpleName();
