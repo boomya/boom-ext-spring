@@ -1,6 +1,6 @@
-package com.lesdo.ext.spring;
+package com.boom.ext.spring;
 
-import com.lesdo.ext.spring.global.SystemGlobals;
+import com.boom.ext.spring.global.SystemGlobals;
 
 /**
  * Created by jiangshan on 15/4/5.

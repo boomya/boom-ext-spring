@@ -1,7 +1,7 @@
-package com.lesdo.ext.spring;
+package com.boom.ext.spring;
 
-import com.lesdo.ext.spring.annotation.LocalService;
-import com.lesdo.ext.spring.annotation.LocalServiceField;
+import com.boom.ext.spring.annotation.LocalService;
+import com.boom.ext.spring.annotation.LocalServiceField;
 import org.springframework.context.ApplicationContext;
 
 import java.lang.reflect.Field;

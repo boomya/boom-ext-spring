@@ -1,6 +1,6 @@
-package com.lesdo.ext.spring.processor;
+package com.boom.ext.spring.processor;
 
-import com.lesdo.ext.spring.ServiceLocator;
+import com.boom.ext.spring.ServiceLocator;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

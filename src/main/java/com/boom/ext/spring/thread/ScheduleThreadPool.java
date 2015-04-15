@@ -1,4 +1,4 @@
-package com.lesdo.ext.spring.thread;
+package com.boom.ext.spring.thread;
 
 import org.jessma.util.LogUtil;
 import org.slf4j.Logger;

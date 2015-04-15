@@ -1,4 +1,4 @@
-package com.lesdo.ext.spring.annotation;
+package com.boom.ext.spring.annotation;
 
 import org.springframework.stereotype.Component;
 

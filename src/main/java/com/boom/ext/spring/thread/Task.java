@@ -1,4 +1,4 @@
-package com.lesdo.ext.spring.thread;
+package com.boom.ext.spring.thread;
 
 /**
  * Created by jiangshan on 15/3/25.
